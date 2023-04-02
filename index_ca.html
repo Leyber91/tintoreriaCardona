@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tintoreria Cardona</title>
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	
+	<!-- Font Awesome icons -->
+	<script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!-- Language selector -->
+	<div class="language-selector">
+		<a href="index.html"><i class="fas fa-flag flag-es"></i></a>
+		<a href="index_ca.html"><i class="fas fa-flag flag-ca"></i></a>
+		<a href="index_en.html"><i class="fas fa-flag flag-en"></i></a>
+	</div>
+
+	<!-- Header section -->
+	<header class="container-fluid">
+		<img src="header-image.jpg" alt="Tintoreria Cardona">
+	</header>
+	
+	<!-- Main content section -->
+	<main class="container py-5">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>Benvinguts a Tintoreria Cardona</h1>
+				<p>Ofereixem serveis professionals de bugaderia i neteja en sec per a tota la teva roba i articles domèstics. El nostre personal experimentat utilitza equipament d'última generació i detergents ecològics per assegurar que la teva roba surti fresca, neta i amb el millor aspecte possible.</p>
+				<a href="#schedule-pickup" class="btn btn-primary btn-lg">Sol·licita una recollida</a>
+			</div>
+			<div class="col-md-4">
+				<img src="laundry-service.jpg" alt="Servei de bugaderia" class="img-fluid">
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Els nostres serveis</h2>
+				<ul>
+					<li>Neteja en sec i bugaderia per a tot tipus de roba</li>
+					<li>Ropa de llit, tovalloles i altres articles domèstics</li>
+					<li>Retocs i reparacions</li>
+					<li>Reparació i politura de calçat</li>
+				</ul>
+			</div>
+			<div class="col-md-8">
+				<h2>Els nostres preus</h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Servei</th>
+							<th>Preu</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Bugada i plegat</td>
+							<td>2,50 € per lliura</td>
+						</tr>
+						<tr>
+							<td>Neteja en sec</td>
+							<td>Des de 5 € per peça</td>
+						</tr>
+						<tr>
+							<td>Ropa de llit</td>
+							<td>Des de 10 €</td>
+						</tr>
+						<tr>
+							<td>Reparació de calçat</td>
+							<td>Des de 15 €</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-8">
+				<h2>Post setmanal</h2>
+				<p>Mantingueu-vos al dia amb les últimes notícies i consells de Tintoreria Cardona. El nostre bloc setmanal cobreix temes com:</p>
+				<ul>
+					<li>Com cuidar teixits delicats</li>
+					<li>Els avantatges dels detergents ecològics per a bugaderia</li>
+					<li>Com eliminar taques difícils de la roba</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<img src="blog-image.jpg" alt="Publicació del bloc" class="img-fluid">
+			</div>
+		</div>
+		<hr>
+		<div class="row" id="schedule-pickup">
+			<div class="col-md-8">
+				<h2>Sol·licita una recollida</h2>
+				<form>
+					<div class="form-group">
+						<label for="name">Nom:</label>
+						<input type="text" class="form-control" id="name" name="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Correu electrònic:</label>
+						<input type="email" class="form-control" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="phone">Telèfon:</label>
+						<input type="tel" class="form-control" id="phone" name="phone" required>
+					</div>
+					<div class="form-group">
+						<label for="pickup-date">Data de recollida:</label>
+						<input type="date" class="form-control" id="pickup-date" name="pickup-date" required>
+					</div>
+					<div class="form-group">
+						<label for="pickup-time">Hora de recollida:</label>
+						<input type="time" class="form-control" id="pickup-time" name="pickup-time" required>
+					</div>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<img src="pickup-image.jpg" alt="Sol·licita una recollida" class="img-fluid">
+			</div>
+		</div>
+	</main>
+	
+	<!-- Footer section -->
+	<footer class="container-fluid">
+		<p>Segueix-nos a les xarxes socials:</p>
+		<a href="https://www.facebook.com/tintoreriacardona" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+		<a href="https://twitter.com/tintoreriacar" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+		<a href="https://www.instagram.com/tintoreriacardona/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+						
