@@ -8,7 +8,7 @@
     font-weight: 700;
     font-size: 48px;
     color: #333;
-    margin-bottom: 0;
+    margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     line-height: 1.6;
 }
@@ -240,6 +240,7 @@ a:hover, button:hover {
     font-size: 0.9rem;
     color: #ccc5c5;
     padding-left: 15px;
+    margin-bottom: 0.7em;
   }
   
   .contact-info a {
@@ -270,3 +271,13 @@ a:hover, button:hover {
     }
   }
   
+  @media (min-width: 992px) {
+    .header-top {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .contact-info {
+      margin-bottom: 0;
+    }
+  }
