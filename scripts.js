@@ -6,3 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileToggle = document.querySelector(".mobile-toggle");
+    mobileToggle.addEventListener("click", function () {
+      const languageSelector = document.querySelector(".language-selector");
+      languageSelector.classList.toggle("shown");
+    });
+  });
+  
