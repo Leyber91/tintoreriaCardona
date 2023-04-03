@@ -176,28 +176,55 @@ a:hover, button:hover {
   
 
 
-/* Responsive design */
-@media (max-width: 992px) {
+  @media (max-width: 992px) {
     .language-selector {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        background-color: #333;
-        display: flex;
-        visibility: visible;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background-color: #333;
+      visibility: hidden;
     }
-    /* Responsive design */
-    /* Add this to show the language selector when toggled */
-
+  
     .language-selector a {
-        padding: 10px;
+      padding: 10px;
     }
-
+  
     .language-toggle {
-        display: inline-block;
-        cursor: pointer;
-        margin-left: 15px;
+      display: inline-block;
+      cursor: pointer;
+      margin-left: 15px;
     }
-}
+  
+    .header {
+      position: relative;
+      padding-bottom: 50px;
+    }
+  
+    .header:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background-color: #333;
+    }
+  
+    .language-selector.shown {
+      visibility: visible;
+      animation: slideInDown 0.5s;
+    }
+  
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  }
+  
