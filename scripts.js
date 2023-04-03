@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     languageToggle.classList.add("language-toggle");
     languageToggle.innerHTML = '<i class="fas fa-globe"></i>';
     document.querySelector(".header-content").appendChild(languageToggle);
-
+  
     languageToggle.addEventListener("click", function () {
-        const languageSelector = document.querySelector(".language-selector");
-        languageSelector.classList.toggle("shown");
+      const languageSelector = document.querySelector(".language-selector");
+      languageSelector.classList.toggle("shown");
     });
-});
+  });
+  
