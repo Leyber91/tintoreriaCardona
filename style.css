@@ -41,10 +41,13 @@ body {
 .logo {
     display: inline-block;
     margin: 0 auto;
+
 }
 
 .logo-title {
     font-size: 2.5em;
+    color: #fff;
+
 }
 
 .language-selector {
@@ -142,6 +145,35 @@ a:hover, button:hover {
     }
 }
 
+.navbar {
+    background-color: #333;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    color: #ccc5c5;
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  
+  .nav-link {
+    color: #ccc5c5;
+    padding: 0 10px;
+  }
+  
+  .nav-link:hover {
+    color: #677d95;
+  }
+  
+  /* Add the following media query to handle mobile devices */
+  @media (max-width: 992px) {
+    .logo-title {
+      font-size: 1.5em;
+    }
+  }
+  
 /* Responsive design */
 /* Responsive design */
 @media (max-width: 992px) {
