@@ -1,38 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Tintoreria Cardona</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
-	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Tintorería Cardona, el mejor servicio de lavandería y tintorería en Barcelona. Ofrecemos limpieza en seco, tintes y más para todas sus prendas y objetos domésticos.">
+    <meta name="keywords" content="tintorería, lavandería, limpieza en seco, tintes, ropa, Barcelona">
+    <title>Tintorería Cardona | Servicios de lavandería y tintorería en Barcelona</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/a43703738c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom scripts -->
+    <script src="script.js"></script>
 </head>
 <body>
-
-<!-- Header section -->
-<header class="container-fluid">
-	<img src="header-image.jpg" alt="Tintoreria Cardona">
-</header>
-
-<!-- Language selector -->
-<div class="container-fluid bg-light">
-	<div class="container py-3">
-		<div class="row">
-			<div class="col-md-12">
-				<a href="index.html"><img src="spain-flag.png" alt="Spanish" title="Español"></a>
-				<a href="index_ca.html"><img src="catalonia-flag.png" alt="Catalan" title="Català"></a>
-				<img src="uk-flag.png" alt="English" title="English">
-			</div>
-		</div>
-	</div>
-</div>
+    <header class="header">
+        <nav class="language-selector">
+            <a href="index.html" title="Versión en español"><i class="fas fa-flag flag-es"></i> ES</a>
+            <a href="index_ca.html" title="Versió en català"><i class="fas fa-flag flag-ca"></i> CA</a>
+            <a href="index_en.html" title="English version"><i class="fas fa-flag flag-en"></i> EN</a>
+        </nav>
+        <div class="header-content">
+            <img src="./assets/images/Header.png" alt="Tintorería Cardona Background" class="img-fluid">
+            <div class="logo">
+                <h1 class="logo-title">Tintorería Cardona</h1>
+            </div>
+        </div>
+    </header>
+    <!-- Res-->
 
 <!-- Main content section -->
 <main class="container py-5">
@@ -134,22 +138,58 @@
 		</div>
 	</div>
 	<hr>
+	<div class="row">
+		<div class="col-md-8">
+			<h2>Weekly posts</h2>
+			<p>Stay up to date with the latest news and advice from Tintoreria Cardona. Our weekly blog covers topics such as:</p>
+			<ul>
+				<li>How to care for delicate fabrics</li>
+				<li>The benefits of eco-friendly laundry detergents</li>
+				<li>How to remove tough stains from clothing</li>
+			</ul>
+		</div>
+		<div class="col-md-4">
+			<h2>Contact us</h2>
+			<p>We are located at:</p>
+			<p>Carrer València 454. Barcelona</p>
+			<p>932462035</p>
+			<div class="mapouter">
+				<div class="gmap_canvas">
+					<iframe width="100%" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Calle%20Valencia%20454,%20Barcelona&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
 </main>
-<!-- Footer section -->
-<footer class="container-fluid">
-	<p>Follow us on social media:</p>
-	<a href="https://www.facebook.com/tintoreriacardona" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-	<a href="https://twitter.com/tintoreriacar" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-	<a href="https://www.instagram.com/tintoreriacardona/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Contact</h3>
+				<p>
+					Address: Carrer València 454, Barcelona, Spain<br>
+					Phone: +34 93 246 20 35<br>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Hours of operation</h3>
+				<p>
+					Monday to Friday: 10:00 to 14:00 and 17:00 to 20:00<br>
+					Saturdays: 10:00 - 14:00<br>
+					Sundays and holidays: Closed
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Social media</h3>
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+			</div>
+		</div>
+	</div>
 </footer>
-
-<!-- Scripts -->
 <script>
-    AOS.init();
+	AOS.init();
 </script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

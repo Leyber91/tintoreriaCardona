@@ -3,6 +3,15 @@
     margin: 0;
     padding: 0;
 }
+.logo-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+}
 
 body {
     font-family: "Playfair Display", serif;
@@ -19,14 +28,17 @@ body {
 
 /* Header */
 .header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .header-content {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .logo {
@@ -38,6 +50,13 @@ body {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-title {
+    font-size: 3.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px #333;
 }
 
 .language-selector {
@@ -48,13 +67,14 @@ body {
 }
 
 .language-selector a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
-    margin-left: 10px;
+    padding: 0 10px;
 }
 
+
 .language-selector a:hover {
-    color: #f4f4f4;
+    color: #007bff;
 }
 
 /* Main */
@@ -71,9 +91,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #666;
+    margin-bottom: 20px;
+
 }
 
 hr {
@@ -114,6 +136,12 @@ a:hover, button:hover {
     transform: translateY(-2px);
 }
 
+.img-fluid {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
 /* Animations */
 @keyframes slideInRight {
     0% {
@@ -123,5 +151,12 @@ a:hover, button:hover {
     100% {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .language-selector {
+        justify-content: center;
     }
 }
