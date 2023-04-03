@@ -67,14 +67,14 @@ body {
 }
 
 .language-selector a {
-    color: #333;
+    color: #ccc5c5;
     text-decoration: none;
     padding: 0 10px;
 }
 
 
 .language-selector a:hover {
-    color: #007bff;
+    color: #677d95;
 }
 
 /* Main */
