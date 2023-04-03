@@ -266,6 +266,7 @@ a:hover, button:hover {
     .contact-info {
       display: flex;
       align-items: left;
+      padding-top: 2em ;
     }
   }
   
@@ -277,5 +278,6 @@ a:hover, button:hover {
   
     .contact-info {
       margin-bottom: 0;
+      padding-top:2em ;
     }
   }
