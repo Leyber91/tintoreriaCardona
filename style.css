@@ -228,3 +228,27 @@ a:hover, button:hover {
     }
   }
   
+  .contact-info {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: #ccc5c5;
+    padding-left: 15px;
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+    color: #ccc5c5;
+    margin-right: 10px;
+  }
+  
+  .contact-info a:hover {
+    color: #677d95;
+  }
+  
+  .contact-info span {
+    margin-right: 10px;
+  }
+  
