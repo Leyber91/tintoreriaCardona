@@ -30,34 +30,21 @@ body {
 .header {
     position: relative;
     width: 100%;
-    height: auto;
+    background-color: #333;
+    padding: 20px 0;
 }
 
 .header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
 }
-
 .logo {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    margin-bottom: 20px;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .logo-title {
-    font-size: 3.5em;
-    color: #fff;
-    text-shadow: 2px 2px 4px #333;
-    white-space: nowrap;
+    font-size: 2.5em;
 }
 
 .language-selector {
@@ -156,8 +143,29 @@ a:hover, button:hover {
 }
 
 /* Responsive design */
+/* Responsive design */
 @media (max-width: 992px) {
     .language-selector {
-        justify-content: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    .language-selector a {
+        padding: 10px;
+    }
+
+    .language-selector.shown {
+        display: flex;
+    }
+
+    .language-toggle {
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 15px;
     }
 }
